@@ -25,7 +25,6 @@ import com.licheedev.modbus4android.ModbusObserver;
 import com.licheedev.modbus4android.ModbusParam;
 import com.licheedev.modbus4android.param.SerialParam;
 import com.licheedev.modbus4android.param.TcpParam;
-import com.licheedev.myutils.LogPlus;
 import com.serotonin.modbus4j.ModbusMaster;
 import com.serotonin.modbus4j.msg.ReadCoilsResponse;
 import com.serotonin.modbus4j.msg.ReadDiscreteInputsResponse;
@@ -284,7 +283,6 @@ public class MainActivity extends BaseActivity {
             //mStopBits = savedInstanceState.getInt("stopBits", 1);
         }
 
-        LogPlus.e("mode=" + mMode);
 
         mAreaSerial.setVisibility(mMode == MODE_SERIAL ? View.VISIBLE : View.GONE);
         mAreaTcp.setVisibility(mMode == MODE_TCP ? View.VISIBLE : View.GONE);

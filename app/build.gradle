@@ -28,8 +28,6 @@ dependencies {
 
     implementation project(':modbus4android')
 //    implementation 'com.github.licheedev:Modbus4Android:0.21'
-    // logplus
-    implementation 'com.github.licheedev.SomeLibrary:myutils:0.02'
     // gson
     implementation 'com.google.code.gson:gson:2.8.2'
     // 下拉
